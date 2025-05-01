@@ -4,117 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NOMD BLACK OUT EDT</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 0;
-    }
-    header {
-      padding: 40px 20px 20px;
-      background: rgba(0, 0, 0, 0.6);
-    }
-    img.logo {
-      width: 100px;
-      margin-bottom: 15px;
-    }
-    h1 {
-      font-size: 2.4rem;
-      margin: 0;
-    }
-    .section {
-      padding: 30px 20px;
-      background: rgba(0, 0, 0, 0.5);
-      margin: 20px;
-      border-radius: 10px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .btn {
-      background: #00c853;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      margin-top: 10px;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background: #00b248;
-    }
-    footer {
-      font-size: 0.9rem;
-      padding: 20px;
-      color: #aaa;
-      background: rgba(0, 0, 0, 0.6);
-      margin-top: 40px;
-    }
-    input, textarea {
-      width: 90%;
-      max-width: 400px;
-      padding: 10px;
-      margin: 10px auto;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    form {
-      margin-top: 10px;
-    }
-  </style>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <img src="logo.png" alt="Logo NOMD" class="logo" />
-    <h1>NOMD BLACK OUT EDT</h1>
-    <p>Cuando todo se apaga, tú debes estar listo.</p>
+<body class="bg-cover bg-center text-gray-100" style="background-image: url('background.jpg')">
+
+  <!-- Barra de navegación fija -->
+  <nav class="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-75 backdrop-blur z-10">
+    <div class="max-w-5xl mx-auto flex items-center justify-between p-4">
+      <img src="logo.png" alt="Logo NOMD" class="w-16">
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="#inicio" class="hover:text-green-400">Inicio</a></li>
+        <li><a href="#vision" class="hover:text-green-400">Visión</a></li>
+        <li><a href="#caracteristicas" class="hover:text-green-400">Características</a></li>
+        <li><a href="#offline" class="hover:text-green-400">Ultra Offline</a></li>
+        <li><a href="#contacto" class="hover:text-green-400">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección Inicio -->
+  <header id="inicio" class="pt-24 pb-16 text-center bg-gray-800 bg-opacity-60">
+    <h1 class="text-4xl md:text-5xl font-bold">NOMD BLACK OUT EDT</h1>
+    <p class="mt-4 text-lg md:text-xl text-gray-300">Cuando todo se apaga, tú debes estar listo.</p>
   </header>
 
-  <div class="section">
-    <h2>¿Qué es NOMD?</h2>
-    <p>
-      NOMD BLACK OUT EDT es una aplicación móvil de alerta, comunicación y supervivencia diseñada para funcionar incluso cuando ya no hay red, satélites ni infraestructura.  
+  <!-- Sección ¿Qué es NOMD? -->
+  <section id="vision" class="max-w-3xl mx-auto bg-gray-700 bg-opacity-50 rounded-lg p-8 my-12">
+    <h2 class="text-3xl font-semibold mb-4">¿Qué es NOMD?</h2>
+    <p class="text-gray-200 leading-relaxed">
+      NOMD BLACK OUT EDT es una aplicación móvil de alerta, comunicación y supervivencia diseñada para funcionar incluso cuando ya no hay red, satélites ni infraestructura.
     </p>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Características Clave</h2>
-    <ul style="list-style: none; padding: 0;">
-      <li>✅ Modo alerta inmediata a tus contactos</li>
-      <li>✅ Manuales y mapas offline integrados</li>
-      <li>✅ Comunicación local por Bluetooth / WiFi Direct</li>
-      <li>✅ Funciona sin red, sin nube, sin satélites</li>
+  <!-- Sección Características -->
+  <section id="caracteristicas" class="max-w-3xl mx-auto bg-gray-700 bg-opacity-50 rounded-lg p-8 my-12">
+    <h2 class="text-3xl font-semibold mb-6">Características Clave</h2>
+    <ul class="space-y-3 text-gray-200">
+      <li class="flex items-start"><span class="text-green-400 mr-2">✔</span>Modo alerta inmediata a tus contactos</li>
+      <li class="flex items-start"><span class="text-green-400 mr-2">✔</span>Manuales y mapas offline integrados</li>
+      <li class="flex items-start"><span class="text-green-400 mr-2">✔</span>Comunicación local por Bluetooth / WiFi Direct</li>
+      <li class="flex items-start"><span class="text-green-400 mr-2">✔</span>Funciona sin red, sin nube, sin satélites</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Modo Ultra Offline</h2>
-    <p>
-      Cuando el mundo digital se apaga, NOMD entra en modo ultra offline:  
-      se convierte en una herramienta de supervivencia autónoma, con guías, mapas y comunicación local entre dispositivos compatibles.  
+  <!-- Sección Ultra Offline -->
+  <section id="offline" class="max-w-3xl mx-auto bg-gray-700 bg-opacity-50 rounded-lg p-8 my-12">
+    <h2 class="text-3xl font-semibold mb-4">Modo Ultra Offline</h2>
+    <p class="text-gray-200 leading-relaxed">
+      Cuando el mundo digital se apaga, NOMD entra en modo ultra offline: se convierte en una herramienta de supervivencia autónoma, con guías, mapas y comunicación local entre dispositivos compatibles.
     </p>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>¿Quieres estar entre los primeros en probarlo?</h2>
-    <form action="https://formspree.io/f/manoewen" method="POST">
-      <input type="email" name="email" placeholder="Tu correo electrónico" required />
-      <textarea name="mensaje" rows="3" placeholder="Mensaje o interés (opcional)"></textarea>
-      <br />
-      <button class="btn" type="submit">Quiero estar informado</button>
+  <!-- Sección Contacto -->
+  <section id="contacto" class="max-w-3xl mx-auto bg-gray-700 bg-opacity-50 rounded-lg p-8 my-12">
+    <h2 class="text-3xl font-semibold mb-6">¿Quieres estar entre los primeros en probarlo?</h2>
+    <form action="https://formspree.io/f/abcdxyz" method="POST" class="space-y-4">
+      <input type="email" name="email" placeholder="Tu correo electrónico" required
+             class="w-full p-3 rounded bg-gray-800 text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400" />
+      <textarea name="mensaje" rows="3" placeholder="Mensaje o interés (opcional)"
+                class="w-full p-3 rounded bg-gray-800 text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
+      <button type="submit"
+              class="w-full py-3 bg-green-500 hover:bg-green-600 rounded text-white font-semibold transition">
+        Quiero estar informado
+      </button>
     </form>
-  </div>
+  </section>
 
-  <footer>
-    <p>© 2025 NOMD BLACK OUT EDT. Proyecto creado por Inx5 + GPT.</p>
-    <p>Secciones futuras: Guías | Blog | Comunidad | Términos</p>
+  <!-- Footer -->
+  <footer class="bg-gray-800 bg-opacity-60 text-center py-6 mt-12">
+    <p class="text-sm text-gray-400">© 2025 NOMD BLACK OUT EDT. Proyecto creado por Inx5 + GPT.</p>
+    <p class="text-sm text-gray-500 mt-2">Secciones futuras: Guías | Blog | Comunidad | Términos</p>
   </footer>
+
 </body>
 </html>
